@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Modern responsive portfolio site",
   "main": "index.js",
-  "homepage": "https://Cairhiin.github.io/Frontend-course"
+  "homepage": "https://Cairhiin.github.io/Frontend-course",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
