@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './navbar.scss';
 
 const Navbar: FunctionComponent = () => {
@@ -10,18 +10,23 @@ const Navbar: FunctionComponent = () => {
 			</div>
 			<div className="navbar expanded">
 				<ul className="navbar-links">
-					<Link to={`about`}>
+					<NavLink 
+						to={`about`}
+						className={({ isActive }) =>
+			              isActive ? 'active' : undefined
+			            }
+					>
 						<li>About</li>
-					</Link>
-					<a href="#">	
+					</NavLink>
+					<NavLink to={`skills`}>	
 						<li>Skills</li>
-					</a>
-					<a href="#">	
+					</NavLink>
+					<NavLink to={`projects`}>	
 						<li>Projects</li>
-					</a>
-					<a href="#">	
+					</NavLink>
+					<NavLink to={`contact`}>	
 						<li>Contact</li>
-					</a>
+					</NavLink>
 				</ul>
 			</div>
 		</div>

@@ -7,6 +7,9 @@ import {
 } from "react-router-dom";
 import Root from './routes/root';
 import About from './routes/about';
+import Skills from './routes/skills';
+import Contact from './routes/contact';
+import Projects from './routes/projects';
 import './index.scss';
 
 const router = createHashRouter([
@@ -17,6 +20,18 @@ const router = createHashRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "skills",
+        element: <Skills />,
+      },
+      {
+        path: "projects",
+        element: <Projects />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },

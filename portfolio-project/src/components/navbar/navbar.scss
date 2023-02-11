@@ -20,20 +20,25 @@
 	.navbar-links {
 		margin: 0;
 		list-style: none;
-
+		
 		a {
 			color: $on-primary-color;
+			
 
+			&.active li {
+				background: #222;
+				line-height: 80px;
+			}
+			
 			li {
-				line-height: 20px;
 				text-align: center;
 				width: 75px;
 				display: inline-block;
+				line-height: 20px;
 				@include easeOut;
 
 				&:hover {
-					line-height: 80px;
-					background: #222;
+					color: $tertiary-color;
 				}
 			}
 		}	
