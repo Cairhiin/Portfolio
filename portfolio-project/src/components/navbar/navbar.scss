@@ -1,0 +1,41 @@
+@import '../../assets/scss/_config.scss';
+
+#nav {
+	background: $primary-color;
+	color: $on-primary-color;
+	display: flex;
+	height: 80px;
+	line-height: 80px;
+	justify-content: space-between;
+	width: 100%;
+	@include dropShadow;
+	padding: 0 2rem;
+
+	.logo {
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.navbar-links {
+		margin: 0;
+		list-style: none;
+
+		a {
+			color: $on-primary-color;
+
+			li {
+				line-height: 20px;
+				text-align: center;
+				width: 75px;
+				display: inline-block;
+				@include easeOut;
+
+				&:hover {
+					line-height: 80px;
+					background: #222;
+				}
+			}
+		}	
+	}
+}
