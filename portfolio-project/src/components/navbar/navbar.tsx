@@ -1,30 +1,60 @@
-import React, { FunctionComponent } from 'react';
-import { Link } from "react-router-dom";
+import React, { FunctionComponent, useState } from 'react';
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './navbar.scss';
 
 const Navbar: FunctionComponent = () => {
+	const [isMenuOpen, toggleMenu] = useState<boolean>(false);
 	return (
-		<div id="nav">
-			<div className="logo">
-				Frank van de Voorde
+		<nav id="nav" className={ isMenuOpen ? "expanded" : "collapsed" }>
+			<div className="hamburger">
+				<FontAwesomeIcon icon={faBars} className="menu-toggle" onClick={ () => toggleMenu(!isMenuOpen) } />
+				<span className={ isMenuOpen ? "logo active" : "logo" }>
+					<h1>Frank van de Voorde</h1>
+				</span>
 			</div>
-			<div className="navbar expanded">
+			<div className={ isMenuOpen ? "navbar expanded" : "navbar collapsed" }>
 				<ul className="navbar-links">
-					<Link to={`about`}>
-						<li>About</li>
-					</Link>
-					<a href="#">	
-						<li>Skills</li>
-					</a>
-					<a href="#">	
-						<li>Projects</li>
-					</a>
-					<a href="#">	
-						<li>Contact</li>
-					</a>
+					<NavLink to={`/`}>
+						<li>
+							<FontAwesomeIcon icon={faHouse} />
+							<span className="navbar-link link">
+								Home
+							</span> 
+						</li>
+					</NavLink>
+					<NavLink to={`skills`}>	
+						<li>
+							<FontAwesomeIcon icon={faCode} /> 
+							<span className="navbar-link link">
+								Skills	
+							</span>
+						</li>
+					</NavLink>
+					<NavLink to={`projects`}>	
+						<li>
+							<FontAwesomeIcon icon={faFolderOpen} /> 
+							<span className="navbar-link link">
+								Projects
+							</span>
+						</li>
+					</NavLink>
+					<NavLink to={`contact`}>	
+						<li>
+							<FontAwesomeIcon icon={faEnvelope} /> 
+							<span className="navbar-link link">
+								Contact
+							</span>						
+						</li>
+					</NavLink>
 				</ul>
 			</div>
-		</div>
+		</nav>
 	);
 }
 

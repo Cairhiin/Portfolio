@@ -1,12 +1,12 @@
 import React, { FunctionComponent } from 'react';
 import Header from '../components/header/header';
 
-const About: FunctionComponent = () => {
+const Skills: FunctionComponent = () => {
 	return (
-		<main id="home">
-			<Header>Home</Header>
+		<main id="skills">
+			<Header>Skills</Header>
 		</main>
 	);
 }
 
-export default About;
+export default Skills;

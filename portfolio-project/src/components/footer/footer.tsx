@@ -3,7 +3,7 @@ import './footer.scss';
 
 const Footer: FunctionComponent = () => {
  	return (
- 		<footer>
+ 		<footer id="footer">
 
  		</footer>
 	);

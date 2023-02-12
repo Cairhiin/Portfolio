@@ -1,0 +1,15 @@
+@import '../../assets/scss/_config.scss';
+
+#page-header {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	padding-left: 2rem;
+	border-bottom: 1px solid darken($secondary-color, 4.0);
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 1.3rem;
+		color: $primary-color;
+	}
+}

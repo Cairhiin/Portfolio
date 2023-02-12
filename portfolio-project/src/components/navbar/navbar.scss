@@ -1,41 +1,152 @@
 @import '../../assets/scss/_config.scss';
 
 #nav {
+	@include easeOut;
+	min-height: 100vh;
 	background: $primary-color;
 	color: $on-primary-color;
-	display: flex;
-	height: 80px;
-	line-height: 80px;
-	justify-content: space-between;
-	width: 100%;
-	@include dropShadow;
-	padding: 0 2rem;
 
-	.logo {
-		font-size: 1.5rem;
-		font-weight: 700;
-		text-transform: uppercase;
+	.hamburger {
+		height: 60px;
+		line-height: 60px;
+		font-size: 1.3rem;
+		border-bottom: 1px solid darken($primary-color, 5.0);
+		padding: 0 1rem;
+		margin: 0;
+
+		.logo h1 {
+			text-transform: uppercase;
+			font-size: 1.3rem;
+			padding-left: 2rem;
+			margin: 0;
+			display: none;							
+		}	
+		
+		.logo.active h1 {
+			display: inline;
+		}					
 	}
 
-	.navbar-links {
-		margin: 0;
-		list-style: none;
+	.navbar {
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		margin-top: 2rem;
+		width: 300px;
 
-		a {
-			color: $on-primary-color;
+		.navbar-links {
+			padding: 0;
+			list-style: none;
+			
+			a {
+				text-decoration: none;
+				color: $on-primary-color;
 
-			li {
-				line-height: 20px;
-				text-align: center;
-				width: 75px;
-				display: inline-block;
-				@include easeOut;
+				li {
+					@include easeOut;
+					padding: 0.5rem 2rem;
 
-				&:hover {
-					line-height: 80px;
-					background: #222;
+					&:hover {
+						background: darken($primary-color, 2.0);
+						color: $tertiary-color;
+						padding-left: 4rem;
+					}
+
+					.navbar-link.link {
+						padding-left: 1.5rem;
+					}
 				}
 			}
-		}	
+		}
+	}
+}
+
+@include mediaXL {
+	#nav {
+		.hamburger {
+			.menu-toggle {
+				display: none;
+			}
+
+			.logo h1 {
+				display: inline;
+				padding: 1.3rem;
+			}
+		}
+	}
+}
+
+@include mediaLg {
+	#nav.collapsed { 
+		width: 50px;
+
+		.hamburger {
+			font-size: 1.5rem;
+		}
+
+		.navbar.collapsed {
+			@include easeOut;
+			width: 50px;
+
+			.navbar-link.link {
+				display: none;
+			}
+		}
+
+		.navbar.collapsed {
+			.navbar-links {
+				a {
+					li {
+						padding: 0.5rem 0;
+						text-align: center;
+
+						&:hover {
+							background: darken($primary-color, 2.0);
+							color: $tertiary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include mediaMd {
+	#nav.collapsed { 
+		width: 50px;
+
+		.hamburger {
+			font-size: 1.5rem;
+		}
+
+		.navbar.collapsed {
+			@include easeOut;
+			width: 50px;
+
+			.navbar-link.link {
+				display: none;
+			}
+		}
+
+		.navbar.collapsed {
+			.navbar-links {
+				a {
+					li {
+						padding: 0.5rem 0;
+						text-align: center;
+
+						&:hover {
+							background: darken($primary-color, 2.0);
+							color: $tertiary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include mediaSm {
+	#nav {
+		
 	}
 }
