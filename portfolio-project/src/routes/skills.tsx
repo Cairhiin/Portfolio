@@ -1,8 +1,11 @@
 import React, { FunctionComponent } from 'react';
+import Header from '../components/header/header';
 
 const Skills: FunctionComponent = () => {
 	return (
-		<h1>SKILLS</h1>
+		<main id="skills">
+			<Header>Skills</Header>
+		</main>
 	);
 }
 

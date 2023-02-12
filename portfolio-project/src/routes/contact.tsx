@@ -1,8 +1,12 @@
 import React, { FunctionComponent } from 'react';
+import Header from '../components/header/header';
+import './contact.scss';
 
 const Contact: FunctionComponent = () => {
 	return (
-		<h1>CONTACT</h1>
+		<main id="contact">
+			<Header>Contact</Header>
+		</main>	
 	);
 }
 

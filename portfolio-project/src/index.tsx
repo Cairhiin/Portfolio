@@ -18,7 +18,7 @@ const router = createHashRouter([
     element: <Root />,
     children: [
       {
-        path: "about",
+        path: "/",
         element: <About />,
       },
       {

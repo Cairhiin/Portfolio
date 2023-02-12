@@ -1,35 +1,55 @@
 import React, { FunctionComponent } from 'react';
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFolderOpen } from '@fortawesome/free-solid-svg-icons'
 import './navbar.scss';
 
 const Navbar: FunctionComponent = () => {
 	return (
-		<div id="nav">
+		<nav id="nav">
 			<div className="logo">
-				Frank van de Voorde
+				<h1>Frank van de Voorde</h1>
 			</div>
 			<div className="navbar expanded">
 				<ul className="navbar-links">
-					<NavLink 
-						to={`about`}
-						className={({ isActive }) =>
-			              isActive ? 'active' : undefined
-			            }
-					>
-						<li>About</li>
+					<NavLink to={`/`}>
+						<li>
+							<FontAwesomeIcon icon={faHouse} />
+							<span className="navbar-link link">
+								Home
+							</span> 
+						</li>
 					</NavLink>
 					<NavLink to={`skills`}>	
-						<li>Skills</li>
+						<li>
+							<FontAwesomeIcon icon={faCode} /> 
+							<span className="navbar-link link">
+								Skills	
+							</span>
+						</li>
 					</NavLink>
 					<NavLink to={`projects`}>	
-						<li>Projects</li>
+						<li>
+							<FontAwesomeIcon icon={faFolderOpen} /> 
+							<span className="navbar-link link">
+								Projects
+							</span>
+						</li>
 					</NavLink>
 					<NavLink to={`contact`}>	
-						<li>Contact</li>
+						<li>
+							<FontAwesomeIcon icon={faEnvelope} /> 
+							<span className="navbar-link link">
+								Contact
+							</span>						
+						</li>
 					</NavLink>
 				</ul>
 			</div>
-		</div>
+		</nav>
 	);
 }
 

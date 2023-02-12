@@ -1,46 +1,60 @@
 @import '../../assets/scss/_config.scss';
 
 #nav {
+	@include easeOut;
+	min-height: 100vh;
 	background: $primary-color;
 	color: $on-primary-color;
-	display: flex;
-	height: 80px;
-	line-height: 80px;
-	justify-content: space-between;
-	width: 100%;
-	@include dropShadow;
-	padding: 0 2rem;
 
 	.logo {
-		font-size: 1.5rem;
-		font-weight: 700;
 		text-transform: uppercase;
+		text-align: center;
+		height: 60px;
+		line-height: 60px;
+		font-size: 0.7rem;
+		border-bottom: 1px solid darken($primary-color, 5.0);;
 	}
 
-	.navbar-links {
-		margin: 0;
-		list-style: none;
-		
-		a {
-			color: $on-primary-color;
-			
+	.navbar.expanded {
+		width: 300px;
+	}
 
-			&.active li {
-				background: #222;
-				line-height: 80px;
-			}
-			
-			li {
-				text-align: center;
-				width: 75px;
-				display: inline-block;
-				line-height: 20px;
-				@include easeOut;
+	.navbar.collapsed {
+		width: 100px;
 
-				&:hover {
-					color: $tertiary-color;
+		.navbar-link.link {
+			display: none;
+		}
+	}
+
+	.navbar {
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		margin-top: 2rem;
+
+		.navbar-links {
+			padding: 0;
+			list-style: none;
+			
+			a {
+				text-decoration: none;
+				color: $on-primary-color;
+
+				li {
+					@include easeOut;
+					padding: 0.5rem 2rem;
+
+					&:hover {
+						background: darken($primary-color, 2.0);
+						color: $tertiary-color;
+						padding-left: 4rem;
+					}
+
+					.navbar-link.link {
+						padding-left: 1.5rem;
+					}
 				}
 			}
-		}	
+		}
 	}
 }
