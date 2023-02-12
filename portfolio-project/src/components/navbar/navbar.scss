@@ -6,31 +6,32 @@
 	background: $primary-color;
 	color: $on-primary-color;
 
-	.logo {
-		text-transform: uppercase;
-		text-align: center;
+	.hamburger {
 		height: 60px;
 		line-height: 60px;
-		font-size: 0.7rem;
-		border-bottom: 1px solid darken($primary-color, 5.0);;
-	}
+		font-size: 1.3rem;
+		border-bottom: 1px solid darken($primary-color, 5.0);
+		padding: 0 1rem;
+		margin: 0;
 
-	.navbar.expanded {
-		width: 300px;
-	}
-
-	.navbar.collapsed {
-		width: 100px;
-
-		.navbar-link.link {
-			display: none;
-		}
+		.logo h1 {
+			text-transform: uppercase;
+			font-size: 1.3rem;
+			padding-left: 2rem;
+			margin: 0;
+			display: none;							
+		}	
+		
+		.logo.active h1 {
+			display: inline;
+		}					
 	}
 
 	.navbar {
 		font-size: 1.2rem;
 		text-transform: uppercase;
 		margin-top: 2rem;
+		width: 300px;
 
 		.navbar-links {
 			padding: 0;
@@ -56,5 +57,96 @@
 				}
 			}
 		}
+	}
+}
+
+@include mediaXL {
+	#nav {
+		.hamburger {
+			.menu-toggle {
+				display: none;
+			}
+
+			.logo h1 {
+				display: inline;
+				padding: 1.3rem;
+			}
+		}
+	}
+}
+
+@include mediaLg {
+	#nav.collapsed { 
+		width: 50px;
+
+		.hamburger {
+			font-size: 1.5rem;
+		}
+
+		.navbar.collapsed {
+			@include easeOut;
+			width: 50px;
+
+			.navbar-link.link {
+				display: none;
+			}
+		}
+
+		.navbar.collapsed {
+			.navbar-links {
+				a {
+					li {
+						padding: 0.5rem 0;
+						text-align: center;
+
+						&:hover {
+							background: darken($primary-color, 2.0);
+							color: $tertiary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include mediaMd {
+	#nav.collapsed { 
+		width: 50px;
+
+		.hamburger {
+			font-size: 1.5rem;
+		}
+
+		.navbar.collapsed {
+			@include easeOut;
+			width: 50px;
+
+			.navbar-link.link {
+				display: none;
+			}
+		}
+
+		.navbar.collapsed {
+			.navbar-links {
+				a {
+					li {
+						padding: 0.5rem 0;
+						text-align: center;
+
+						&:hover {
+							background: darken($primary-color, 2.0);
+							color: $tertiary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include mediaSm {
+	#nav {
+		
 	}
 }

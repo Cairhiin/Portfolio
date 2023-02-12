@@ -1,19 +1,24 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useState } from 'react';
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faFolderOpen } from '@fortawesome/free-solid-svg-icons'
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './navbar.scss';
 
 const Navbar: FunctionComponent = () => {
+	const [isMenuOpen, toggleMenu] = useState<boolean>(false);
 	return (
-		<nav id="nav">
-			<div className="logo">
-				<h1>Frank van de Voorde</h1>
+		<nav id="nav" className={ isMenuOpen ? "expanded" : "collapsed" }>
+			<div className="hamburger">
+				<FontAwesomeIcon icon={faBars} className="menu-toggle" onClick={ () => toggleMenu(!isMenuOpen) } />
+				<span className={ isMenuOpen ? "logo active" : "logo" }>
+					<h1>Frank van de Voorde</h1>
+				</span>
 			</div>
-			<div className="navbar expanded">
+			<div className={ isMenuOpen ? "navbar expanded" : "navbar collapsed" }>
 				<ul className="navbar-links">
 					<NavLink to={`/`}>
 						<li>
