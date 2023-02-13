@@ -5,6 +5,9 @@ const Projects: FunctionComponent = () => {
 	return (
 		<main id="projects">
 			<Header>Projects</Header>
+			<div id="content">
+
+			</div>
 		</main>
 	);
 }
