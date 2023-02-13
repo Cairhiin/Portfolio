@@ -2,17 +2,20 @@
 
 #nav {
 	@include easeOut;
-	min-height: 100vh;
+	min-height: 200vh;
 	background: $primary-color;
 	color: $on-primary-color;
 
 	.hamburger {
+		position: fixed;
+		background: $primary-color;
 		height: 60px;
 		line-height: 60px;
 		font-size: 1.3rem;
 		border-bottom: 1px solid darken($primary-color, 5.0);
 		padding: 0 1rem;
 		margin: 0;
+		z-index: 2;
 
 		.logo h1 {
 			text-transform: uppercase;
@@ -32,6 +35,7 @@
 		text-transform: uppercase;
 		margin-top: 2rem;
 		width: 300px;
+		margin-top: 80px;
 
 		.navbar-links {
 			padding: 0;
@@ -62,7 +66,10 @@
 
 @include mediaXL {
 	#nav {
+
 		.hamburger {
+			z-index: 2;
+
 			.menu-toggle-button {
 				position: absolute;
 				text-align: center;
@@ -119,12 +126,11 @@
 		width: 50px;
 
 		.hamburger {
-			font-size: 1.5rem;
+			font-size: 1.3rem;
 		}
 
 		.navbar.collapsed {
 			@include easeOut;
-			width: 50px;
 
 			.navbar-link.link {
 				display: none;
@@ -177,7 +183,7 @@
 	width: 50px;
 
 	.hamburger {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 
 		.logo {
 			display: none;
