@@ -209,7 +209,8 @@
 					text-align: center;
 
 					&:hover {
-						background: darken($primary-color, 2.0);
+						@include easeOut;
+						background: darken($primary-color, 4.0);
 						color: $tertiary-color;
 					}
 				}
