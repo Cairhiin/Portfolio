@@ -1,7 +1,8 @@
 @import '../../assets/scss/_config.scss';
 
 #page-header {
-	width: 100%;
+	display:flex;
+	justify-content: space-between;
 	height: 60px;
 	line-height: 60px;
 	padding-left: 2rem;
@@ -13,5 +14,9 @@
 		text-transform: uppercase;
 		font-size: 1.3rem;
 		color: $primary-color;
+	}
+
+	.copyright {
+		margin-right: 2rem;
 	}
 }

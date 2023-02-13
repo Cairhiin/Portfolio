@@ -6,7 +6,7 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './navbar.scss';
 
 const Navbar: FunctionComponent = () => {
@@ -19,7 +19,7 @@ const Navbar: FunctionComponent = () => {
 					<h1>Frank van de Voorde</h1>
 				</span>
 				<span className={ isMenuOpen ? "menu-toggle-button active" : "menu-toggle-button" }>
-					<FontAwesomeIcon icon={faChevronLeft} onClick={ () => toggleMenu(false) }/>
+					<FontAwesomeIcon icon={faChevronRight} onClick={ () => toggleMenu(false) }/>
 				</span>	
 			</div>
 			<div className={ isMenuOpen ? "navbar expanded" : "navbar collapsed" }>

@@ -33,7 +33,27 @@
 		
 		.logo.active h1 {
 			display: inline;
-		}					
+		}
+
+		.menu-toggle-button {
+			@include easeOut;
+			position: absolute;
+			text-align: center;
+			top: 10px;
+			left: 280px;
+			width: 40px;
+			height: 40px;
+			border-radius: 80px;
+			background: $primary-color;
+			color: $on-primary-color;
+			line-height: 34px;
+			border: 4px solid $on-primary-color;
+
+			
+		}	
+		.menu-toggle-button:hover {
+				transform: rotate(180deg);
+			}				
 	}
 
 	.navbar {
@@ -74,21 +94,6 @@
 	#nav {
 
 		.hamburger {
-			z-index: 2;
-
-			.menu-toggle-button {
-				position: absolute;
-				text-align: center;
-				top: 10px;
-				left: 280px;
-				width: 40px;
-				height: 40px;
-				border-radius: 80px;
-				background: $primary-color;
-				color: $on-primary-color;
-				line-height: 34px;
-				border: 4px solid $on-primary-color;
-			}
 
 			.menu-toggle {
 				display: none;

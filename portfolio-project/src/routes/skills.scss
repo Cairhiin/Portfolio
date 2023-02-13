@@ -21,6 +21,11 @@
 				justify-content: flex-start;
 				gap: 1.5rem;
 				color: $primary-color;
+
+				img {
+					width: 115px;
+					height: auto;
+				}
 			}
 		}
 	}

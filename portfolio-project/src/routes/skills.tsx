@@ -29,8 +29,8 @@ const Skills: FunctionComponent = () => {
 						<FontAwesomeIcon icon={faGit} />
 						<FontAwesomeIcon icon={faWordpress} />
 						<FontAwesomeIcon icon={faPhp} />
-						<img src="./images/typescript.svg" width="115px" height="115px" />
-						<img src="./images/c.svg" width="115px" height="115px" />
+						<img src="./images/typescript.svg" alt="Typescript" />
+						<img src="./images/c.svg" alt="C++" />
 					</div>
 				</section>
 			</div>	
