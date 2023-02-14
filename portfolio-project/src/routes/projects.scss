@@ -7,12 +7,9 @@
 		h3.large-header {
 			@include pageHeader;
 		}
-		
+
 		.project-list {
-			display: grid;
-			grid-template-columns: repeat(2, 2fr);
-			column-gap: 2rem;
-			row-gap: 2rem;
+
 		}
 	}
 }

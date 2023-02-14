@@ -22,21 +22,24 @@ const ProjectCard: FunctionComponent<Props> = ({ id, title, text, image, links, 
 		<li>{ t }</li>
 	);
 	return (
-		<div className="card card{id}">
+		<div className={`card card${id}`}>
 			<div className="card-image">
 				<img src={ image } alt={ title } />
 			</div>	
-			<div className="card-text">
+			<div className="card-text-area">
 				<h4>{ title }</h4>
-				<p>{ text } <br />
-				<span className="card-link-icons">
-					{ linksJSX }
-				</span>
-				<ul className="card-tech">
-					{ techJSX }
-				</ul>
-				</p>
-			</div>
+				<div className="card-highlight-area">					
+					<p>{ text } </p>
+					<span className="card-link-icons">
+						{ linksJSX }
+					</span>
+				</div>
+				<div className="card-tech">
+					<ul>
+						{ techJSX }
+					</ul>
+				</div>
+			</div>	
 		</div>
 	);
 }

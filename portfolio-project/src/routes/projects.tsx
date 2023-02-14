@@ -20,7 +20,7 @@ const Projects: FunctionComponent = () => {
 			<Header>Projects</Header>
 			<div id="content">
 				<section>
-					<h3 className="large-header">Some things I've built</h3>
+					<h3 className="large-header">Some things I have made</h3>
 					<div className="project-list">
 						{ projectsJSX }
 					</div>
