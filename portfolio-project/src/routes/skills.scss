@@ -1,0 +1,35 @@
+@import '../assets/scss/_config.scss';
+
+#skills {
+	#content {
+		@include pageSetup;
+
+		.skill-list {
+			h3.large-header {
+				@include pageHeader;
+			}
+
+			&.skills {
+				max-width: 1000px;
+				font-size: 6rem;
+				padding: 0 1rem;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				column-gap: 1rem;
+				color: $primary-color;
+
+				.skill {
+					flex-basis: 13%;
+					text-align: center;
+				}
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+}

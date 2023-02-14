@@ -5,6 +5,9 @@ const About: FunctionComponent = () => {
 	return (
 		<main id="home">
 			<Header>Home</Header>
+			<div id="content">
+
+			</div>
 		</main>
 	);
 }

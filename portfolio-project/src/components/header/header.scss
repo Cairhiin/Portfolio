@@ -1,15 +1,22 @@
 @import '../../assets/scss/_config.scss';
 
 #page-header {
-	width: 100%;
+	display:flex;
+	justify-content: space-between;
 	height: 60px;
 	line-height: 60px;
 	padding-left: 2rem;
-	border-bottom: 1px solid darken($secondary-color, 4.0);
+	margin-left: 3rem;
+	border-bottom: 1px solid darken($secondary-color, 10.0);
+	background: $secondary-color;
 
 	h2 {
 		text-transform: uppercase;
 		font-size: 1.3rem;
 		color: $primary-color;
+	}
+
+	.copyright {
+		margin-right: 2rem;
 	}
 }

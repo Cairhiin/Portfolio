@@ -1,14 +1,27 @@
 @import '../assets/scss/_config.scss';
 
 #page {
-	display: flex;
-	justify-content: flex-start;
 
 	nav {
 		max-width: 300px;
+		min-height: 100vh;
+		position: fixed;
 	}
 
 	main {
 		width: 100%;
+
+		#content {
+			display: grid;
+			grid-template-columns: 1fr 8fr 1fr;
+			grid-template-areas: 
+			'. section .';
+
+			section {
+				grid-area: section;
+				margin: 3rem auto;
+				padding: 0 3rem;
+			}
+		}
 	}
 }
