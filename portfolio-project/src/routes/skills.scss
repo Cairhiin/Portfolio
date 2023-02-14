@@ -2,8 +2,7 @@
 
 #skills {
 	#content {
-		background: $secondary-color;
-		height: 100%;
+		@include pageSetup;
 
 		.skill-list {
 			h3.large-header {
@@ -11,19 +10,26 @@
 				font-size: 3rem;
 				text-transform: uppercase;
 				color: $primary-color;
+				text-align: center;
 			}
 
 			&.skills {
 				font-size: 6rem;
-				padding: 1rem;
+				padding: 0 1rem;
 				display: flex;
 				flex-wrap: wrap;
-				justify-content: flex-start;
-				gap: 1rem;
+				justify-content: center;
+				align-items: center;
+				column-gap: 1rem;
 				color: $primary-color;
 
+				.skill {
+					flex-basis: 13%;
+					text-align: center;
+				}
+
 				img {
-					width: 100px;
+					width: 100%;
 					height: auto;
 				}
 			}
