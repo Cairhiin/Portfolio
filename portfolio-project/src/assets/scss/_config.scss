@@ -15,6 +15,12 @@ $on-tertiary-color: #282E34;
     0px 1px 3px rgba(0, 0, 0, 0.35);
 }
 
+@mixin pageSetup {
+    padding-left: 50px;
+    background: $secondary-color;
+    height: 100%;
+}
+
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
     @content;
