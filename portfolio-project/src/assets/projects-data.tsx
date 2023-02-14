@@ -12,19 +12,20 @@ const projects = [
 	{
 		id: 1,
 		title: 'Dungeon and Cats',
-		text: 'A game made in C++ with SDL2',
+		text: 'A topdown RPG roguelike made in C++ with SDL2. The game features a light weight entity component system.',
 		image: DungeonAndCats,
 		links: [
 			{
 				src: 'https://version.aalto.fi/gitlab/vandef2/dungeon-and-cats',
 				icon: faGitlab
 			}
-		]
+		],
+		tech: ['SDL2', 'SDL Image', 'SDL Mixer', 'SDL TTF']
 	},
 	{
 		id: 2,
 		title: 'Reimari',
-		text: 'A wordpress website for a local newspaper',
+		text: 'A wordpress website for a local newspaper that is distributed weekly.',
 		image: Reimari,
 		links: [
 			{
@@ -35,12 +36,13 @@ const projects = [
 				src: 'https://reimari.fi',
 				icon: faFile
 			},
-		]
+		],
+		tech: ['PHP', 'Wordpress', 'JavaScript']
 	},
 	{
 		id: 3,
 		title: 'Bookrater',
-		text: 'A MEAN fullstack project for rating books',
+		text: 'A MEAN stack project for rating books. Browse through books, rate them and see how others rate the books you enjoy.',
 		image: Bookrater,
 		links: [
 			{
@@ -55,12 +57,13 @@ const projects = [
 				src: 'https://www.figma.com/file/Gkwm5lgahuRNLaLP99gC9d/Bookrater?node-id=51822%3A4901&t=fGpC3XpZb1yst3j0-1',
 				icon: faFigma
 			},
-		]
+		],
+		tech: ['Express', 'Mongoose', 'Angular', 'TypeScript']
 	},
 	{
 		id: 4,
 		title: 'Gloomhaven',
-		text: 'A Flutter UI design project',
+		text: 'A Flutter UI design project to create a website for an offline activity.',
 		image: Gloomhaven,
 		links: [
 			{
@@ -71,7 +74,8 @@ const projects = [
 				src: 'https://www.figma.com/file/gdLJWY1u3gSzvL13QJ5k5h/Gloomhaven-UI-project?node-id=51396%3A5246&t=fvSw0TaZqEFVgdni-1',
 				icon: faFigma
 			},
-		]
+		],
+		tech: ['Dart', 'Flutter']
 	}
 ];
 

@@ -6,35 +6,51 @@
 	margin: 0;
 	@include dropShadow;
 	background: $primary-color;
-	max-width: 500px;
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);
+	overflow: hidden;
 
 	&:hover {
 		.card-text {
-			height: 100px;
+			height: 50%;
 		}
 	}
 
 	img {
-		width: 100%;
-		height: auto;
+		width: 400px;
+		height: 225px;
+		object-fit: cover;
 	}
 
 	.card-text {
 		@include easeOut;
+		opacity: 0.95;
 		position: absolute;
 		overflow: hidden;
 		background: $primary-color;
 		width: 100%;
 		bottom: 0;
 		left: 0;
-		padding: 0.5rem;
+		padding: 0 0.5rem;
 		color: $on-primary-color;
 		height: 0;
 		z-index: 2;
 
 		h4 {
 			text-transform: uppercase;
-			font-size: 1.2rem;
+			font-size: 1.5rem;
+			color: $tertiary-color;
+		}
+
+		.card-link-icons a {
+			@include easeOut;
+			padding-right: 0.5rem;
+			font-size: 1.5rem;
+			color: $on-primary-color;
+
+			&:hover {
+				color: $tertiary-color;
+			}
 		}
 	}
 }

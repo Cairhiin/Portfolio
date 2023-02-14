@@ -12,14 +12,18 @@ const Projects: FunctionComponent = () => {
 			text={ project.text }
 			image={ project.image }
 			links={ project.links }
+			tech={ project.tech }
 		/>
 	);
 	return (
 		<main id="projects">
 			<Header>Projects</Header>
 			<div id="content">
-				<section className="project-list">
-					{ projectsJSX }
+				<section>
+					<h3 className="large-header">Some things I've built</h3>
+					<div className="project-list">
+						{ projectsJSX }
+					</div>
 				</section>
 			</div>
 		</main>
