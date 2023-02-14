@@ -10,6 +10,7 @@ import { faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { faPhp } from '@fortawesome/free-brands-svg-icons';
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
+import { faFigma } from '@fortawesome/free-brands-svg-icons';
 import './skills.scss';
 
 const Skills: FunctionComponent = () => {
@@ -23,7 +24,8 @@ const Skills: FunctionComponent = () => {
 						<FontAwesomeIcon icon={faHtml5} />
 						<FontAwesomeIcon icon={faAngular} />
 						<FontAwesomeIcon icon={faSass} />
-						<FontAwesomeIcon icon={faJs} />				
+						<FontAwesomeIcon icon={faJs} />	
+						<FontAwesomeIcon icon={faFigma} />			
 						<FontAwesomeIcon icon={faReact} />
 						<FontAwesomeIcon icon={faCss3Alt} />
 						<FontAwesomeIcon icon={faGit} />
