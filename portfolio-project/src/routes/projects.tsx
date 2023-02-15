@@ -6,7 +6,8 @@ import './projects.scss';
 
 const Projects: FunctionComponent = () => {
 	const projectsJSX = projects.map(project => 
-		<ProjectCard 
+		<ProjectCard
+			key={ project.id } 
 			id={ project.id }
 			title={ project.title }
 			text={ project.text }
