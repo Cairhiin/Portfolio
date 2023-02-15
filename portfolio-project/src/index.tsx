@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './routes/root';
-import About from './routes/about';
+import Home from './routes/home';
 import Skills from './routes/skills';
 import Contact from './routes/contact';
 import Projects from './routes/projects';
@@ -19,7 +19,7 @@ const router = createHashRouter([
     children: [
       {
         path: "/",
-        element: <About />,
+        element: <Home />,
       },
       {
         path: "skills",
