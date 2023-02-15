@@ -25,6 +25,13 @@
 					.card-highlight-area {
 						margin-left: -10rem;
 						text-align: right;
+
+						.card-link-icons {
+							a {
+								padding-right: 0;
+								padding-left: 1rem;
+							}
+						}
 					}
 
 					ul {
@@ -84,6 +91,7 @@
 		}
 		
 		.card-highlight-area {
+			font-size: 1.2rem;
 			align-self: start;
 			border-radius: 5px;
 			background: lighten($tertiary-color, 25.0);
