@@ -2,8 +2,6 @@
 
 #skills {
 	#content {
-		@include pageSetup;
-
 		.skill-list {
 			h3.large-header {
 				@include pageHeader;

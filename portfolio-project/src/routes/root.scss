@@ -12,6 +12,7 @@
 		width: 100%;
 
 		#content {
+			@include pageSetup;
 			display: grid;
 			grid-template-columns: 1fr 8fr 1fr;
 			grid-template-areas: 
