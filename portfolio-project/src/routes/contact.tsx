@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import Header from '../components/header/header';
 import ContactForm from '../components/contact-form/contact-form';
 import './contact.scss';
 

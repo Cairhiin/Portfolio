@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import { Link } from "react-router-dom";
-import Header from '../components/header/header';
 import './home.scss';
 
 const Home: FunctionComponent = () => {

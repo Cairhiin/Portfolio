@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import Header from '../components/header/header';
 import ProjectCard from '../components/project-card/project-card';
 import projects from '../assets/projects-data';
 import './projects.scss';

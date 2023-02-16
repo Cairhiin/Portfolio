@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import Header from '../components/header/header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGit } from '@fortawesome/free-brands-svg-icons';
 import { faSass } from '@fortawesome/free-brands-svg-icons';

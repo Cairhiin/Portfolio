@@ -35,6 +35,7 @@
 		margin: 0.5rem 1rem;
 		
 		.error {
+			color: red;
 			background: lighten(red, 45.0);
 			border: 1px solid red;
 			border-radius: 5px;
@@ -42,6 +43,7 @@
 		}
 
 		.success {
+			color: green;
 			background: lighten(green, 65.0);
 			border: 1px solid green;
 			padding: 1rem;
