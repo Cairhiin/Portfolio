@@ -57,7 +57,7 @@ const projects = [
 				icon: faFigma
 			},
 		],
-		tech: ['Express', 'Mongoose', 'Angular', 'TypeScript']
+		tech: ['Express', 'Mongoose', 'Angular', 'TypeScript', 'Sass']
 	},
 	{
 		id: 4,
