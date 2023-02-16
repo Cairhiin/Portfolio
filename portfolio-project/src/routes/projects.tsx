@@ -18,7 +18,6 @@ const Projects: FunctionComponent = () => {
 	);
 	return (
 		<main id="projects">
-			<Header>Projects</Header>
 			<div id="content">
 				<section>
 					<h3 className="large-header">Some things I have made</h3>

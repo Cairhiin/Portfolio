@@ -6,7 +6,6 @@ import './contact.scss';
 const Contact: FunctionComponent = () => {
 	return (
 		<main id="contact">
-			<Header>Contact</Header>
 			<div id="content">
 				<section>
 				<h3 className="large-header">LET'S CONNECT!</h3>

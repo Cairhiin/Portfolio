@@ -6,7 +6,6 @@ import './home.scss';
 const Home: FunctionComponent = () => {
 	return (
 		<main id="home">
-			<Header>Home</Header>
 			<div id="content">
 				<section>
 					<h3 className="large-header">I am Frank van de Voorde</h3>

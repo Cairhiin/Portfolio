@@ -18,7 +18,6 @@ import './skills.scss';
 const Skills: FunctionComponent = () => {
 	return (
 		<main id="skills">
-			<Header>Skills</Header>
 			<div id="content">
 				<section className="skill-list">
 					<h3 className="large-header">The skills and tools I use</h3>
