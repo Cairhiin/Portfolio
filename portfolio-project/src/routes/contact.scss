@@ -1,5 +1,18 @@
 @import '../assets/scss/_config.scss';
 
 #contact {
-	background: $secondary-color;
+	#content {
+		background: $secondary-color;
+
+		h3.large-header {
+			@include pageHeader;
+			text-align: left;
+		}
+		
+		section {
+			form {
+				padding: 0 1rem 1rem 1rem;
+			}
+		}
+	}
 }

@@ -9,7 +9,7 @@ const Contact: FunctionComponent = () => {
 			<Header>Contact</Header>
 			<div id="content">
 				<section>
-				<h3>LET'S CONNECT!</h3>
+				<h3 className="large-header">LET'S CONNECT!</h3>
 					<ContactForm />
 				</section>
 			</div>

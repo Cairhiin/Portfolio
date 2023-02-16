@@ -1,4 +1,6 @@
-import React, { FunctionComponent, useRef, useState } from 'react';
+import React, { 
+	FunctionComponent, useRef, useState, FormEvent 
+} from 'react';
 import emailjs from '@emailjs/browser';
 import './contact-form.scss';
 
@@ -6,7 +8,8 @@ const ContactForm: FunctionComponent = () => {
 	interface FormInfo {
 		name: string,
 		email: string,
-		message: string
+		message: string,
+		error: boolean | null
 	};
 
 	const form = useRef<HTMLFormElement>(null);
@@ -14,54 +17,79 @@ const ContactForm: FunctionComponent = () => {
 	const [formInfo, setFormInfo] = useState<FormInfo>({
 		name: '',
 		email: '',
-		message: ''
+		message: '',
+		error: null
 	});
 	
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
-		console.log(e.target.name)
+	const handleChange = (
+		e: 
+		React.ChangeEvent<HTMLInputElement> | 
+		React.ChangeEvent<HTMLTextAreaElement>
+	): void => {
     	setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
   	};
 	
-	const sendEmail = (e: any) => {
+	const hideFeedbackMessage = (): void => {
+		setFormInfo({ name: '', email: '', message: '', error: null });
+	}
+
+	const setTimer = (): void => {
+		setTimeout(hideFeedbackMessage, 5000);
+	}
+
+	const sendEmail = (e: FormEvent<HTMLFormElement>) => {
 	    e.preventDefault();
+
 	 	if (form.current == null) return;
 	    emailjs.sendForm('service_t9n6o9m', 'template_ebm37pp', form.current, 'IO_5P-XgKIY9jWUYR')
 	     .then((result) => {
-	         console.log("Message sent successfully!"); // Needs real implementation
+	        setFormInfo({ ...formInfo, error: false });
 	    }, (error) => {
-	         console.log("There was an error sending your message!"); // Needs real implementation
-	    });
+	        setFormInfo({ ...formInfo, error: true });
+	    }).finally(setTimer);
     };
+
 	return (
-		<form ref={form} onSubmit={sendEmail}>
-			<input 
-				type="text" 
-				name="name" 
-				placeholder="Name" 
-				className="form-control"
-				value={formInfo.name}
-				onChange={(e) => handleChange(e)}
-				required 
-			/>
-			<input 
-				type="email" 
-				name="email" 
-				placeholder="Email" 
-				className="form-control"
-				value={formInfo.email}
-				onChange={(e) => handleChange(e)} 
-				required 
-			/>
-			<textarea 
-				name="message" 
-				placeholder="Your message"
-				className="form-control" 
-				value={formInfo.message}
-				onChange={(e) => handleChange(e)}
-				required 
-			/>
-			<input type="submit" className="button-primary" value="Send" />
-		</form>
+		<div id="contact-form">
+			<form ref={form} onSubmit={sendEmail}>
+				<input 
+					type="text" 
+					name="name" 
+					placeholder="Name" 
+					className="form-control"
+					value={formInfo.name}
+					onChange={handleChange}
+					required 
+				/>
+				<input 
+					type="email" 
+					name="email" 
+					placeholder="Email" 
+					className="form-control"
+					value={formInfo.email}
+					onChange={handleChange} 
+					required 
+				/>
+				<textarea 
+					name="message" 
+					placeholder="Your message"
+					className="form-control" 
+					value={formInfo.message}
+					onChange={handleChange}
+					required 
+				/>
+				<input type="submit" className="button-primary" value="Send" />
+			</form>
+			{	formInfo.error !== null && 
+				<div className="form-feedback-message">
+					{ 
+						formInfo.error
+							? <div className="error">There was a problem sending your message, please try again.</div>
+							: <div className="success">Your message has been sent successfully!</div>			 
+					}
+				</div>
+			}
+		</div>
 	);
 }
 

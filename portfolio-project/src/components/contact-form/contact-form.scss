@@ -1,9 +1,51 @@
 @import '../../assets/scss/_config.scss';
 
-form {
-	.form-control {
-		width: 100%;
-		padding: 0.5rem;
-		margin-bottom: 1rem;
+#contact-form {
+	form {
+		.form-control {
+			width: 100%;
+			padding: 0.7rem;
+			margin-bottom: 1rem;
+			background: lighten($secondary-color, 5.0);
+			border: 1px solid $tertiary-color;
+			border-radius: 5px;
+		}
+
+		textarea {
+			height: 200px;
+		}
+
+		.button-primary {
+			@include easeOut;
+			background: $tertiary-color;
+			color: $on-tertiary-color;
+			border-radius: 5px;
+			border: none;
+			padding: 0.5rem 1.5rem;
+			font-size: 1.1rem;
+			cursor: pointer;
+
+			&:hover {
+				background: darken($tertiary-color, 15.0);
+			}
+		}
+	}
+
+	.form-feedback-message {
+		margin: 0.5rem 1rem;
+		
+		.error {
+			background: lighten(red, 45.0);
+			border: 1px solid red;
+			border-radius: 5px;
+			padding: 1rem;
+		}
+
+		.success {
+			background: lighten(green, 65.0);
+			border: 1px solid green;
+			padding: 1rem;
+			border-radius: 5px;
+		}
 	}
 }
