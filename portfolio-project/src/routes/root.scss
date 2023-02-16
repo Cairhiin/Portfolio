@@ -26,12 +26,17 @@
 	}
 }
 
-@include mediaXL {
-
-}
-
 @include mediaLg {
-	
+	#page {
+		main {
+			#content {
+				h3.large-header {
+					font-size: 2.5rem;
+					text-align: left;
+				}					
+			}			
+		}
+	}
 }
 
 @include mediaMd {
@@ -41,14 +46,23 @@
 				grid-template-columns: 1rem 8fr 1rem;
 
 				h3.large-header {
-					font-size: 2.5rem;
-				}
+					font-size: 1.9rem;
+					text-align: left;
+				}					
 			}			
 		}
 	}
 }
 
-
 @include mediaSm {
-
+	#page {
+		main {
+			#content {
+				h3.large-header {
+					font-size: 1.4rem;
+					text-align: left;
+				}					
+			}			
+		}
+	}
 }
