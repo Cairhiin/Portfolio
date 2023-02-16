@@ -1,6 +1,9 @@
 @import '../../assets/scss/_config.scss';
 
 #page-header {
+	position: sticky;
+	top: 0;
+	z-index: 5;
 	display:flex;
 	justify-content: space-between;
 	height: 60px;
