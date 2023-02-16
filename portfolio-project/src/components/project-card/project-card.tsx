@@ -26,7 +26,9 @@ const ProjectCard: FunctionComponent<Props> = ({ id, title, text, image, links, 
 	return (
 		<div key={id} className={`card card${id}`}>
 			<div className="card-image">
-				<img src={ image } alt={ title } />
+				<a href={links[0].src} target="_blank" rel="noreferrer">
+					<img src={ image } alt={ title } />
+				</a>
 			</div>	
 			<div className="card-text-area">
 				<h4>{ title }</h4>

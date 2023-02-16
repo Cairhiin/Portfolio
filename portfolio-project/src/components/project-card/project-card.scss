@@ -15,9 +15,10 @@
 				.card-image {
 					order: -1;
 				}
+				
 				.card-text-area {
 					order: 1;
-
+					
 					h4 {
 						text-align: right;
 					}
@@ -42,6 +43,7 @@
 				.card-image {
 					order: 1;
 				}
+
 				.card-text-area {
 					order: -1;
 
@@ -65,18 +67,37 @@
 
 	.card-image {	
 		overflow: hidden;
-		background: $primary-color;
 		max-width: 450px;
+
+		&:hover {
+			img {
+				--_i: 10%;
+				filter: contrast(100%);
+				transform: scale(1.3);
+			}
+
+			.hover-text {
+				width: 25%;
+				bottom: 20px;
+			}
+		}
 
 		img {
 			@include easeOut;
+			position: relative;
 			width: 450px;
 			height: 250px;
 			object-fit: cover;
-
-			&:hover {
-				transform: scale(1.3);
-			}
+			--_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+			--m:
+			    left   var(--_i,0%) top    var(--_g),
+			    bottom var(--_i,0%) left   var(--_g),
+			    top    var(--_i,0%) right  var(--_g),
+			    right  var(--_i,0%) bottom var(--_g);
+			-webkit-mask: var(--m);
+			          mask: var(--m);
+			filter: contrast(50%);
+			transition: .3s linear;
 		}
 	}
 
