@@ -1,0 +1,49 @@
+@import '../assets/scss/_config.scss';
+
+#home {
+	#content {
+		section {
+			max-width: 800px;
+
+			p {
+				padding: 0 1rem 1rem 1rem;
+				font-size: 1.2rem;
+			}
+
+			a {
+				color: lighten($on-secondary-color, 15.0);
+				text-decoration: none;
+				position: relative;
+				display: inline-block;
+
+				&::after {
+					@include easeOut;
+					content: '';
+					position: absolute;
+					width: 100%;
+					transform: scaleX(0);
+					height: 2px;
+					bottom: 0;
+					left: 0;
+					transform-origin: bottom right;
+					background: $tertiary-color;
+				}
+
+				&:hover {
+					@include easeOut;
+					color: $tertiary-color;
+				}
+
+				&:hover::after {
+					transform: scaleX(1);
+  					transform-origin: bottom left;
+				}
+			}
+		}
+
+		h3.large-header {
+			@include pageHeader;
+			text-align: left;
+		}
+	}
+}

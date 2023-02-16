@@ -2,8 +2,6 @@
 
 #skills {
 	#content {
-		@include pageSetup;
-
 		.skill-list {
 			h3.large-header {
 				@include pageHeader;
@@ -30,6 +28,70 @@
 					height: auto;
 				}
 			}
+		}
+	}
+}
+
+@include mediaLg {
+	#page {
+		main {
+			#content {
+				.skill-list {
+					h3.large-header {
+						font-size: 2.5rem;
+					}
+				}
+			}			
+		}
+	}
+}
+
+@include mediaMd {
+	#page {
+		main {
+			#content {
+				.skill-list {
+					h3.large-header {
+						font-size: 1.9rem;
+					}
+
+					&.skills {
+						font-size: 3rem;
+						
+						.skill {
+							img {
+								width: 100%;
+								height: 96px;
+							}
+						}
+					}
+				}
+			}			
+		}
+	}
+}
+
+@include mediaSm {
+	#page {
+		main {
+			#content {
+				.skill-list {
+					h3.large-header {
+						font-size: 1.4rem;
+						text-align: left;
+					}
+
+					&.skills {
+						font-size: 3rem;
+						justify-content: flex-start;
+
+						img {
+							width: 100%;
+							height: 72px;
+						}
+					}					
+				}
+			}			
 		}
 	}
 }

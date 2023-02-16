@@ -12,6 +12,7 @@
 		width: 100%;
 
 		#content {
+			@include pageSetup;
 			display: grid;
 			grid-template-columns: 1fr 8fr 1fr;
 			grid-template-areas: 
@@ -20,8 +21,48 @@
 			section {
 				grid-area: section;
 				margin: 3rem auto;
-				padding: 0 3rem;
 			}
+		}
+	}
+}
+
+@include mediaLg {
+	#page {
+		main {
+			#content {
+				h3.large-header {
+					font-size: 2.5rem;
+					text-align: left;
+				}					
+			}			
+		}
+	}
+}
+
+@include mediaMd {
+	#page {
+		main {
+			#content {
+				grid-template-columns: 1rem 8fr 1rem;
+
+				h3.large-header {
+					font-size: 1.9rem;
+					text-align: left;
+				}					
+			}			
+		}
+	}
+}
+
+@include mediaSm {
+	#page {
+		main {
+			#content {
+				h3.large-header {
+					font-size: 1.4rem;
+					text-align: left;
+				}					
+			}			
 		}
 	}
 }

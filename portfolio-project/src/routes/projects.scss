@@ -1,15 +1,9 @@
 @import '../assets/scss/_config.scss';
 
 #projects {
-	#content {
-		@include pageSetup;		
-
+	#content {	
 		h3.large-header {
 			@include pageHeader;
-		}
-
-		.project-list {
-
 		}
 	}
 }

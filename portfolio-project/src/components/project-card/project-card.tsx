@@ -13,18 +13,22 @@ export type Props = {
 };
 
 const ProjectCard: FunctionComponent<Props> = ({ id, title, text, image, links, tech }) => {
-	const linksJSX = links.map(link => 
-		<a href={ link.src }>
+	const linksJSX = links.map((link, index) => 
+		<a key={index} href={ link.src }>
 			<FontAwesomeIcon icon={link.icon} />	
 		</a>
 	);
-	const techJSX = tech.map(t => 
-		<li>{ t }</li>
+
+	const techJSX = tech.map((t, index) => 
+		<li key={index}>{ t }</li>
 	);
+	
 	return (
-		<div className={`card card${id}`}>
+		<div key={id} className={`card card${id}`}>
 			<div className="card-image">
-				<img src={ image } alt={ title } />
+				<a href={links[0].src} target="_blank" rel="noreferrer">
+					<img src={ image } alt={ title } />
+				</a>
 			</div>	
 			<div className="card-text-area">
 				<h4>{ title }</h4>

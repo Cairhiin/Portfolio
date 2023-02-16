@@ -1,12 +1,12 @@
 import React, { FunctionComponent } from 'react';
-import Header from '../components/header/header';
 import ProjectCard from '../components/project-card/project-card';
 import projects from '../assets/projects-data';
 import './projects.scss';
 
 const Projects: FunctionComponent = () => {
 	const projectsJSX = projects.map(project => 
-		<ProjectCard 
+		<ProjectCard
+			key={ project.id } 
 			id={ project.id }
 			title={ project.title }
 			text={ project.text }
@@ -17,7 +17,6 @@ const Projects: FunctionComponent = () => {
 	);
 	return (
 		<main id="projects">
-			<Header>Projects</Header>
 			<div id="content">
 				<section>
 					<h3 className="large-header">Some things I have made</h3>

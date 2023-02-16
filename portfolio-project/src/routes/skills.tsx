@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import Header from '../components/header/header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGit } from '@fortawesome/free-brands-svg-icons';
 import { faSass } from '@fortawesome/free-brands-svg-icons';
@@ -18,7 +17,6 @@ import './skills.scss';
 const Skills: FunctionComponent = () => {
 	return (
 		<main id="skills">
-			<Header>Skills</Header>
 			<div id="content">
 				<section className="skill-list">
 					<h3 className="large-header">The skills and tools I use</h3>
