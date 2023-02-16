@@ -1,4 +1,4 @@
-@import '../../assets/scss/_config.scss';
+@use "../../index";
 
 #page-header {
 	position: sticky;
@@ -10,13 +10,13 @@
 	line-height: 60px;
 	padding-left: 2rem;
 	margin-left: 3rem;
-	border-bottom: 1px solid darken($secondary-color, 10.0);
-	background: $secondary-color;
+	border-bottom: 1px solid darken(index.$secondary-color, 10.0);
+	background: index.$secondary-color;
 
 	h2 {
 		text-transform: uppercase;
 		font-size: 1.5rem;
-		color: $tertiary-color;
+		color: index.$tertiary-color;
 	}
 
 	.copyright {

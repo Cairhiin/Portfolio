@@ -1,4 +1,4 @@
-@import '../assets/scss/_config.scss';
+@use "../index";
 
 #page {
 
@@ -12,7 +12,7 @@
 		width: 100%;
 
 		#content {
-			@include pageSetup;
+			@include index.pageSetup;
 			display: grid;
 			grid-template-columns: 1fr 8fr 1fr;
 			grid-template-areas: 
@@ -26,20 +26,19 @@
 	}
 }
 
-@include mediaLg {
+@include index.mediaLg {
 	#page {
 		main {
 			#content {
 				h3.large-header {
 					font-size: 2.5rem;
-					text-align: left;
 				}					
 			}			
 		}
 	}
 }
 
-@include mediaMd {
+@include index.mediaMd {
 	#page {
 		main {
 			#content {
@@ -47,14 +46,13 @@
 
 				h3.large-header {
 					font-size: 1.9rem;
-					text-align: left;
 				}					
 			}			
 		}
 	}
 }
 
-@include mediaSm {
+@include index.mediaSm {
 	#page {
 		main {
 			#content {

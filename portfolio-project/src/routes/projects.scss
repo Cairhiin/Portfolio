@@ -1,9 +1,9 @@
-@import '../assets/scss/_config.scss';
+@use "../index";
 
 #projects {
 	#content {	
 		h3.large-header {
-			@include pageHeader;
+			@include index.pageHeader;
 		}
 	}
 }

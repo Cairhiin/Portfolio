@@ -1,10 +1,10 @@
-@import '../assets/scss/_config.scss';
+@use "../index";
 
 #skills {
 	#content {
 		.skill-list {
 			h3.large-header {
-				@include pageHeader;
+				@include index.pageHeader;
 			}
 
 			&.skills {
@@ -16,7 +16,7 @@
 				justify-content: center;
 				align-items: center;
 				column-gap: 1rem;
-				color: $primary-color;
+				color: index.$primary-color;
 
 				.skill {
 					flex-basis: 13%;
@@ -32,7 +32,7 @@
 	}
 }
 
-@include mediaLg {
+@include index.mediaLg {
 	#page {
 		main {
 			#content {
@@ -46,7 +46,7 @@
 	}
 }
 
-@include mediaMd {
+@include index.mediaMd {
 	#page {
 		main {
 			#content {
@@ -71,7 +71,7 @@
 	}
 }
 
-@include mediaSm {
+@include index.mediaSm {
 	#page {
 		main {
 			#content {

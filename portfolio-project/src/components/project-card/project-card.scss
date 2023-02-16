@@ -1,4 +1,4 @@
-@import '../../assets/scss/_config.scss';
+@use "../../index";
 
 .card {
 	position: relative;
@@ -87,7 +87,7 @@
 		}
 
 		img {
-			@include easeOut;
+			@include index.easeOut;
 			position: relative;
 			width: 450px;
 			height: 250px;
@@ -110,7 +110,7 @@
 		h4 {
 			text-transform: uppercase;
 			font-size: 1.5rem;
-			color: $tertiary-color;
+			color: index.$tertiary-color;
 			padding: 0;
 		}
 		
@@ -118,20 +118,20 @@
 			font-size: 1.2rem;
 			align-self: start;
 			border-radius: 5px;
-			background: lighten($tertiary-color, 25.0);
+			background: lighten(index.$tertiary-color, 25.0);
 			padding: 1rem;
 			z-index: 2;
 			opacity: 0.95;
 
 			.card-link-icons {
 				a {
-					@include easeOut;
+					@include index.easeOut;
 					font-size: 1.5rem;
-					color: $on-secondary-color;
+					color: index.$on-secondary-color;
 					padding-right: 1rem;
 
 					&:hover {
-						color: lighten($on-secondary-color, 15.0);
+						color: lighten(index.$on-secondary-color, 15.0);
 					}
 				}
 			}
