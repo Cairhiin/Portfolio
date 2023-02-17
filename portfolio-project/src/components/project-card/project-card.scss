@@ -176,9 +176,24 @@
 					max-width: 100%;
 					flex-basis: 90%;
 
+					h4 {
+						text-align: center;
+						margin-top: 1rem;
+					}
+
 					.card-highlight-area {
+						text-align: left;
 						margin-right: 0rem;
 						margin-left: 0rem;
+					}
+
+					.card-tech > ul {
+						text-align: right;
+
+						li {
+							padding-right: 0;
+							padding-left: 1rem;
+						}
 					}
 				}
 			}
