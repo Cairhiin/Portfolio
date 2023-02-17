@@ -149,3 +149,43 @@
 		}
 	}
 }
+
+@include index.mediaMd {
+	.card {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+
+		.card-image {
+			order: -1;
+			display: block;
+			max-width: 100%;
+			flex-basis: 80%;
+			
+			.card-highlight-area {
+				margin: 0rem;
+			}
+		}
+
+		@for $i from 1 through 4 {
+			&.card#{$i} { 
+				.card-text-area {
+					order: 1;
+					display: block;
+					max-width: 100%;
+					flex-basis: 90%;
+
+					.card-highlight-area {
+						margin-right: 0rem;
+						margin-left: 0rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include index.mediaSm {
+
+}
