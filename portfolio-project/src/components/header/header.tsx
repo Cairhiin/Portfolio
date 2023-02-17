@@ -9,7 +9,6 @@ const Header: FunctionComponent<Props> = ({ children }) => {
 	return (
 		<header id="page-header">
 			<h2>{ children }</h2>
-			<div className="copyright">© { new Date().getFullYear() } Frank van de Voorde</div>
 		</header>
 	);
 };

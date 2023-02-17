@@ -44,8 +44,14 @@ p {
 
 #root, #__next {
   isolation: isolate;
+  background: $secondary-color;
+  opacity: 0.95;
 }
 
 body {
-  background: $secondary-color;
+  background-image: url('./assets/images/pexels-danny-meneses-943096.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }

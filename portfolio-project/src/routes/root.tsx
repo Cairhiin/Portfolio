@@ -3,6 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { motion } from "framer-motion"
 import Navbar from '../components/navbar/navbar';
 import Header from '../components/header/header';
+import Footer from '../components/footer/footer';
 import './root.scss';
 
 const Root: FunctionComponent = () => {
@@ -29,6 +30,7 @@ const Root: FunctionComponent = () => {
 	        >
 				<Outlet />
 			</motion.div>
+			<Footer />
 		</div>
 	)
 }

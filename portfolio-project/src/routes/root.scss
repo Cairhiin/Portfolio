@@ -1,7 +1,6 @@
 @use "../index";
 
 #page {
-
 	nav {
 		max-width: 300px;
 		min-height: 100vh;
@@ -9,6 +8,7 @@
 	}
 
 	main {
+		min-height: calc(100vh - 59px - 69px);
 		width: 100%;
 
 		#content {
