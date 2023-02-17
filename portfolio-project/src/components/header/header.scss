@@ -1,25 +1,19 @@
-@import '../../assets/scss/_config.scss';
+@use "../../index";
 
 #page-header {
 	position: sticky;
 	top: 0;
 	z-index: 5;
-	display:flex;
-	justify-content: space-between;
 	height: 60px;
 	line-height: 60px;
 	padding-left: 2rem;
 	margin-left: 3rem;
-	border-bottom: 1px solid darken($secondary-color, 10.0);
-	background: $secondary-color;
+	border-bottom: 1px solid darken(index.$secondary-color, 10.0);
+	background: index.$secondary-color;
 
 	h2 {
 		text-transform: uppercase;
 		font-size: 1.5rem;
-		color: $tertiary-color;
-	}
-
-	.copyright {
-		margin-right: 2rem;
+		color: index.$tertiary-color;
 	}
 }

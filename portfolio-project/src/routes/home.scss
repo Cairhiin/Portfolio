@@ -1,4 +1,4 @@
-@import '../assets/scss/_config.scss';
+@use "../index";
 
 #home {
 	#content {
@@ -8,16 +8,17 @@
 			p {
 				padding: 0 1rem 1rem 1rem;
 				font-size: 1.2rem;
+				color: index.$on-secondary-color;
 			}
 
 			a {
-				color: lighten($on-secondary-color, 15.0);
+				color: lighten(index.$on-secondary-color, 15.0);
 				text-decoration: none;
 				position: relative;
 				display: inline-block;
 
 				&::after {
-					@include easeOut;
+					@include index.easeOut;
 					content: '';
 					position: absolute;
 					width: 100%;
@@ -26,12 +27,12 @@
 					bottom: 0;
 					left: 0;
 					transform-origin: bottom right;
-					background: $tertiary-color;
+					background: index.$tertiary-color;
 				}
 
 				&:hover {
-					@include easeOut;
-					color: $tertiary-color;
+					@include index.easeOut;
+					color: index.$tertiary-color;
 				}
 
 				&:hover::after {
@@ -42,7 +43,7 @@
 		}
 
 		h3.large-header {
-			@include pageHeader;
+			@include index.pageHeader;
 			text-align: left;
 		}
 	}

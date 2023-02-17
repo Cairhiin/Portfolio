@@ -1,4 +1,4 @@
-@import '../../assets/scss/_config.scss';
+@use "../../index";
 
 #contact-form {
 	form {
@@ -6,8 +6,9 @@
 			width: 100%;
 			padding: 0.7rem;
 			margin-bottom: 1rem;
-			background: lighten($secondary-color, 5.0);
-			border: 1px solid $tertiary-color;
+			background: lighten(index.$secondary-color, 3.0);
+			color: index.$on-secondary-color;
+			border: none;
 			border-radius: 5px;
 		}
 
@@ -16,9 +17,9 @@
 		}
 
 		.button-primary {
-			@include easeOut;
-			background: $tertiary-color;
-			color: $on-tertiary-color;
+			@include index.easeOut;
+			background: index.$tertiary-color;
+			color: index.$on-tertiary-color;
 			border-radius: 5px;
 			border: none;
 			padding: 0.5rem 1.5rem;
@@ -26,7 +27,7 @@
 			cursor: pointer;
 
 			&:hover {
-				background: darken($tertiary-color, 15.0);
+				background: darken(index.$tertiary-color, 15.0);
 			}
 		}
 	}

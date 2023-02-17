@@ -15,7 +15,7 @@ const Home: FunctionComponent = () => {
 					and C++ at Aalto University. Coding is my passion and I aim to learn new things on a daily basis.</p>
 					<p>Check out my&nbsp; 
 					<Link to="projects">projects</Link>,&nbsp; 
-					<Link to="projects">skills</Link>,&nbsp; 
+					<Link to="skills">skills</Link>,&nbsp; 
 					<a href="https://github.com/Cairhiin" target="_blank" rel="noreferrer">GitHub</a>,&nbsp; 
 					<a href="https://version.aalto.fi/gitlab/vandef2" target="_blank" rel="noreferrer">GitLab</a>, or&nbsp; 
 					<Link to="projects">drop me a line</Link>. I am available for freelance opportunities.</p>

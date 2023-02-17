@@ -1,0 +1,40 @@
+@use '../../index';
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: index.$secondary-color;
+	border-top: 1px solid darken(index.$secondary-color, 10.0);
+	color: index.$on-secondary-color;
+	padding: 1rem 2rem;
+	margin-left: 3rem;
+	text-transform: uppercase;
+
+	.social-media-icons {
+		.icon {
+			@include index.easeOut;
+			padding-right: 1rem;
+			font-size: 2rem;
+			color: index.$on-secondary-color;
+
+			&:hover {
+				color: darken(index.$tertiary-color, 15.0);
+			}	
+		}
+	}
+}
+
+@include index.mediaSm {
+	footer {
+		padding: 1rem 0.5rem;
+		font-size: 0.9rem;
+
+		.social-media-icons {
+			.icon {
+				font-size: 1.5rem;
+				padding-right: 0.5rem;
+			}
+		}
+	}
+}
