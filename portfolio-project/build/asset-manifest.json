@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.78418193.css",
+    "main.js": "/static/js/main.e016cc71.js",
+    "static/js/787.071eb048.chunk.js": "/static/js/787.071eb048.chunk.js",
+    "static/media/pexels-danny-meneses-943096.jpg": "/static/media/pexels-danny-meneses-943096.dd4034764eb9ee217f32.jpg",
+    "static/media/gloomhaven.png": "/static/media/gloomhaven.493253bc9f5907088c54.png",
+    "static/media/bookrater.png": "/static/media/bookrater.7f808fb97df3cbe8b83d.png",
+    "static/media/reimari.png": "/static/media/reimari.5170cb7aaade8023fdc1.png",
+    "static/media/dungeon-and-cats.png": "/static/media/dungeon-and-cats.edf6ae48ab8d25de1c18.png",
+    "static/media/c.svg": "/static/media/c.c48ba2626be8477db0863e1fdb19d719.svg",
+    "static/media/typescript.svg": "/static/media/typescript.69ea8c0648433bdc4785aa4dc0981a30.svg",
+    "index.html": "/index.html",
+    "main.78418193.css.map": "/static/css/main.78418193.css.map",
+    "main.e016cc71.js.map": "/static/js/main.e016cc71.js.map",
+    "787.071eb048.chunk.js.map": "/static/js/787.071eb048.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78418193.css",
+    "static/js/main.e016cc71.js"
+  ]
+}
