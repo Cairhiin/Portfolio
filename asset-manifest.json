@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/cairhiin.github.io/Frontend-course/static/css/main.8123e2f6.css",
-    "main.js": "/cairhiin.github.io/Frontend-course/static/js/main.f46cdd61.js",
-    "static/js/787.071eb048.chunk.js": "/cairhiin.github.io/Frontend-course/static/js/787.071eb048.chunk.js",
-    "static/media/pexels-danny-meneses-943096.jpg": "/cairhiin.github.io/Frontend-course/static/media/pexels-danny-meneses-943096.dd4034764eb9ee217f32.jpg",
-    "static/media/gloomhaven.png": "/cairhiin.github.io/Frontend-course/static/media/gloomhaven.493253bc9f5907088c54.png",
-    "static/media/bookrater.png": "/cairhiin.github.io/Frontend-course/static/media/bookrater.7f808fb97df3cbe8b83d.png",
-    "static/media/reimari.png": "/cairhiin.github.io/Frontend-course/static/media/reimari.5170cb7aaade8023fdc1.png",
-    "static/media/dungeon-and-cats.png": "/cairhiin.github.io/Frontend-course/static/media/dungeon-and-cats.edf6ae48ab8d25de1c18.png",
-    "static/media/c.svg": "/cairhiin.github.io/Frontend-course/static/media/c.c48ba2626be8477db0863e1fdb19d719.svg",
-    "static/media/typescript.svg": "/cairhiin.github.io/Frontend-course/static/media/typescript.69ea8c0648433bdc4785aa4dc0981a30.svg",
-    "index.html": "/cairhiin.github.io/Frontend-course/index.html",
-    "main.8123e2f6.css.map": "/cairhiin.github.io/Frontend-course/static/css/main.8123e2f6.css.map",
-    "main.f46cdd61.js.map": "/cairhiin.github.io/Frontend-course/static/js/main.f46cdd61.js.map",
-    "787.071eb048.chunk.js.map": "/cairhiin.github.io/Frontend-course/static/js/787.071eb048.chunk.js.map"
+    "main.css": "/Frontend-course/static/css/main.37bebf5a.css",
+    "main.js": "/Frontend-course/static/js/main.5e68d79b.js",
+    "static/js/787.071eb048.chunk.js": "/Frontend-course/static/js/787.071eb048.chunk.js",
+    "static/media/pexels-danny-meneses-943096.jpg": "/Frontend-course/static/media/pexels-danny-meneses-943096.dd4034764eb9ee217f32.jpg",
+    "static/media/gloomhaven.png": "/Frontend-course/static/media/gloomhaven.493253bc9f5907088c54.png",
+    "static/media/bookrater.png": "/Frontend-course/static/media/bookrater.7f808fb97df3cbe8b83d.png",
+    "static/media/reimari.png": "/Frontend-course/static/media/reimari.5170cb7aaade8023fdc1.png",
+    "static/media/dungeon-and-cats.png": "/Frontend-course/static/media/dungeon-and-cats.edf6ae48ab8d25de1c18.png",
+    "static/media/c.svg": "/Frontend-course/static/media/c.c48ba2626be8477db0863e1fdb19d719.svg",
+    "static/media/typescript.svg": "/Frontend-course/static/media/typescript.69ea8c0648433bdc4785aa4dc0981a30.svg",
+    "index.html": "/Frontend-course/index.html",
+    "main.37bebf5a.css.map": "/Frontend-course/static/css/main.37bebf5a.css.map",
+    "main.5e68d79b.js.map": "/Frontend-course/static/js/main.5e68d79b.js.map",
+    "787.071eb048.chunk.js.map": "/Frontend-course/static/js/787.071eb048.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8123e2f6.css",
-    "static/js/main.f46cdd61.js"
+    "static/css/main.37bebf5a.css",
+    "static/js/main.5e68d79b.js"
   ]
 }
