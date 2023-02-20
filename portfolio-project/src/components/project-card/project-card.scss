@@ -7,6 +7,9 @@
 	display: grid; 
 	grid-template-columns: repeat(2, 2fr);
 	margin-bottom: 3rem;
+	background: darken(index.$secondary-color, 3.0);
+	padding: 2rem;
+	border-radius: 8px;
 
 	/* Reversing order every each other card */
 	@for $i from 1 through 4 {
@@ -156,6 +159,7 @@
 		flex-direction: row;
 		justify-content: space-evenly;
 		flex-wrap: wrap;
+		padding: 1rem 0.5rem;
 
 		.card-image {
 			order: -1;
@@ -179,6 +183,7 @@
 					h4 {
 						text-align: center;
 						margin-top: 1rem;
+						font-size: 1.7rem;
 					}
 
 					.card-highlight-area {

@@ -2,6 +2,7 @@ import React, {
 	FunctionComponent, useRef, useState, FormEvent 
 } from 'react';
 import emailjs from '@emailjs/browser';
+import apiData from './contact-api-data';
 import './contact-form.scss';
 
 const ContactForm: FunctionComponent = () => {
@@ -41,7 +42,7 @@ const ContactForm: FunctionComponent = () => {
 	    e.preventDefault();
 
 	 	if (form.current == null) return;
-	    emailjs.sendForm('service_t9n6o9m', 'template_ebm37pp', form.current, 'IO_5P-XgKIY9jWUYR')
+	    emailjs.sendForm(apiData.service, apiData.template, form.current, apiData.key)
 	     .then((result) => {
 	        setFormInfo({ ...formInfo, error: false });
 	    }, (error) => {
