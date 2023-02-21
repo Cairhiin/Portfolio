@@ -11,6 +11,11 @@ npm install
 
 npm run build
 
+npm install -g serve
+ 
+serve -s build
+
+Open a browser at http://localhost:3000
 ```
 
 #### FIGMA DESIGN
