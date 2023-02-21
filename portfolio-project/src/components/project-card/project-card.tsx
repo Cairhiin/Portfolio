@@ -27,10 +27,12 @@ const ProjectCard: FunctionComponent<Props> = ({ id, title, text, image, links, 
 		<li key={index}>{ t }</li>
 	);
 	
+	const translateAmount: string = id % 2 === 0 ? "translateX(-300px)" : "translateX(300px)";
+
 	return (
 		<div ref={ref} key={id} className={`card card${id}`}
 			style={{
-	          transform: isInView ? "none" : "translateX(-300px)",
+	          transform: isInView ? "none" : translateAmount,
 	          opacity: isInView ? 1 : 0,
 	          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 	        }}
