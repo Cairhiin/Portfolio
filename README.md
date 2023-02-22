@@ -24,5 +24,5 @@ https://www.figma.com/file/pVRT1Jr6q34QK2p3N8WBMy/Material-3-Design-Kit-(Communi
 #### DEPLOYED WEBSITE ON GITHUB
 https://cairhiin.github.io/Frontend-course/
 
-#### VIDEO OF THE WEBSITE RUNNING ON GITHUB PAGES
+#### VIDEO OF THE WEBSITE RUNNING LOCALLY
 https://youtu.be/ClYo6r0zU-A
