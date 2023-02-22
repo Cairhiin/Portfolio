@@ -18,7 +18,7 @@ const Home: FunctionComponent = () => {
 					<Link to="skills">skills</Link>,&nbsp; 
 					<a href="https://github.com/Cairhiin" target="_blank" rel="noreferrer">GitHub</a>,&nbsp; 
 					<a href="https://version.aalto.fi/gitlab/vandef2" target="_blank" rel="noreferrer">GitLab</a>, or&nbsp; 
-					<Link to="projects">drop me a line</Link>. I am available for freelance opportunities.</p>
+					<Link to="contact">drop me a line</Link>. I am available for freelance opportunities.</p>
 				</section>
 			</div>
 		</main>
