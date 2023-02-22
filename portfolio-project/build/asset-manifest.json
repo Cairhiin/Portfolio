@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Frontend-course/static/css/main.8aa012f2.css",
-    "main.js": "/Frontend-course/static/js/main.8a45a8d1.js",
+    "main.js": "/Frontend-course/static/js/main.ea523f62.js",
     "static/js/787.071eb048.chunk.js": "/Frontend-course/static/js/787.071eb048.chunk.js",
     "static/media/pexels-danny-meneses-943096.jpg": "/Frontend-course/static/media/pexels-danny-meneses-943096.dd4034764eb9ee217f32.jpg",
     "static/media/gloomhaven.png": "/Frontend-course/static/media/gloomhaven.493253bc9f5907088c54.png",
@@ -12,11 +12,11 @@
     "static/media/typescript.svg": "/Frontend-course/static/media/typescript.69ea8c0648433bdc4785aa4dc0981a30.svg",
     "index.html": "/Frontend-course/index.html",
     "main.8aa012f2.css.map": "/Frontend-course/static/css/main.8aa012f2.css.map",
-    "main.8a45a8d1.js.map": "/Frontend-course/static/js/main.8a45a8d1.js.map",
+    "main.ea523f62.js.map": "/Frontend-course/static/js/main.ea523f62.js.map",
     "787.071eb048.chunk.js.map": "/Frontend-course/static/js/787.071eb048.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8aa012f2.css",
-    "static/js/main.8a45a8d1.js"
+    "static/js/main.ea523f62.js"
   ]
 }
