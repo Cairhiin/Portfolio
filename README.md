@@ -1,4 +1,4 @@
-# Frontend Course - Frank van de Voorde
+# Frontend Course - Franciscus van de Voorde
 Frontend design course: Coursework and Project
 
 #### RUNNING THE PROJECT
