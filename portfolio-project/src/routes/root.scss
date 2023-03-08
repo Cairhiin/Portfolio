@@ -55,6 +55,7 @@
 @include index.mediaSm {
 	#page {
 		main {
+			min-height: calc(100vh - 59px - 62px);
 			#content {
 				h3.large-header {
 					font-size: 1.4rem;
