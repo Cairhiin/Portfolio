@@ -76,11 +76,11 @@ const Skills: FunctionComponent = () => {
 					</section>
 					<section className="skill-list">
 						<h3 className="large-header">Currently learning</h3>
-						<div className="skill-list skills">
+						<div className="skill-learning">
 							<div className="skill">
 								<FontAwesomeIcon icon={faLaravel} />
-								<span className="skill-text">Laravel & Tailwind</span>
 							</div>
+							<div className="skill-text">Laravel & <br /> Tailwind</div>
 						</div>
 					</section>
 				</div>
