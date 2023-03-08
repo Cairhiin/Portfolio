@@ -9,6 +9,19 @@
 				@include index.pageHeader;
 			}
 
+			.skill-learning {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 6rem;
+				color: index.$primary-color;
+
+				.skill-text {
+					font-size: 1.5rem;
+					margin-left: 2rem;
+				}
+			}
+
 			&.skills {
 				max-width: 1000px;
 				font-size: 6rem;
@@ -89,6 +102,17 @@
 					h3.large-header {
 						font-size: 1.9rem;
 						text-align: left;
+					}
+
+					.skill-learning {
+						justify-content: flex-start;
+						font-size: 3rem;
+						padding-left: 1rem;
+
+						.skill-text {
+							font-size: 1rem;
+							margin-left: 1rem;
+						}
 					}
 
 					&.skills {
