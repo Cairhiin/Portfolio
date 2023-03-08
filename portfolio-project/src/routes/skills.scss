@@ -3,6 +3,8 @@
 #skills {
 	#content {
 		.skill-list {
+			margin: 2rem auto;
+
 			h3.large-header {
 				@include index.pageHeader;
 			}
